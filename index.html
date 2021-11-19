@@ -12,23 +12,31 @@
       type="text/css"
     />
     <link rel="stylesheet" href="./demo/demo.css" type="text/css" />
-    <script src="./demo/draggable.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+      $(function () {
+        $(".window").draggable({
+          handle: ".title-bar",
+          stack: ".window",
+        });
+      });
+    </script>
   </head>
   <body>
-    <div class="draggable">
-      <div class="window">
-        <div class="title-bar dragger">
-          <button aria-label="Close"></button>
-          <div class="spacer"></div>
-          <div class="icon--face"></div>
-          About this computer
-          <div class="spacer"></div>
-          <button aria-label="Zoom"></button>
-          <button aria-label="Collapse"></button>
-        </div>
-        <div class="window-body-container">
-          <div class="window-body">
-            <pre>
+    <div class="window">
+      <div class="title-bar">
+        <button aria-label="Close"></button>
+        <div class="spacer"></div>
+        <div class="icon--face"></div>
+        About this computer
+        <div class="spacer"></div>
+        <button aria-label="Zoom"></button>
+        <button aria-label="Collapse"></button>
+      </div>
+      <div class="window-body-container">
+        <div class="window-body">
+          <pre>
 Scrollbars only work in Chrome/Webkit
 	    
 Resize me
@@ -42,51 +50,48 @@ Quisque nibh lectus, rutrum ac ipsum non, porttitor molestie elit. Vestibulum a 
 Donec vitae bibendum sem. Nullam ipsum arcu, accumsan in leo vitae, dignissim accumsan metus. Proin et risus non justo eleifend euismod. 
 Donec sit amet neque eget magna luctus consequat quis ac nisi. Nulla at metus sed libero mattis efficitur nec ut sapien.
 	      </pre
-            >
-          </div>
+          >
         </div>
       </div>
     </div>
-    <div class="draggable">
-      <div class="window">
-        <div class="title-bar dragger">
-          <button aria-label="Close"></button>
-          <div class="spacer"></div>
-          <div class="icon--face"></div>
-          About this computer
-          <div class="spacer"></div>
-          <button aria-label="Zoom"></button>
-          <button aria-label="Collapse"></button>
+    <div class="window">
+      <div class="title-bar dragger">
+        <button aria-label="Close"></button>
+        <div class="spacer"></div>
+        <div class="icon--face"></div>
+        About this computer
+        <div class="spacer"></div>
+        <button aria-label="Zoom"></button>
+        <button aria-label="Collapse"></button>
+      </div>
+      <div class="window-body-container">
+        <div
+          class="window-body-finderheader window-body-finderheader--listview"
+        >
+          <div>32 items, 707.3 MB available</div>
         </div>
-        <div class="window-body-container">
-          <div
-            class="window-body-finderheader window-body-finderheader--listview"
-          >
-            <div>32 items, 707.3 MB available</div>
-          </div>
-          <div class="window-body">
-            <button class="primary">OK</button>
-            <button>Cancel</button>
-            <button disabled>Disabled</button>
-            <input type="text" name="" />
-            <input type="checkbox" name="checkbox" />
-            <label for="checkbox">Pure CSS Checkbox</label>
-            <select>
-              <option value="0">Select car:</option>
-              <option value="1">Audi</option>
-              <option value="2">BMW</option>
-              <option value="3">Citroen</option>
-              <option value="4">Ford</option>
-              <option value="5">Honda</option>
-              <option value="6">Jaguar</option>
-              <option value="7">Land Rover</option>
-              <option value="8">Mercedes</option>
-              <option value="9">Mini</option>
-              <option value="10">Nissan</option>
-              <option value="11">Toyota</option>
-              <option value="12">Volvo</option>
-            </select>
-          </div>
+        <div class="window-body">
+          <button class="primary">OK</button>
+          <button>Cancel</button>
+          <button disabled>Disabled</button>
+          <input type="text" name="" />
+          <input type="checkbox" name="checkbox" />
+          <label for="checkbox">Pure CSS Checkbox</label>
+          <select>
+            <option value="0">Select car:</option>
+            <option value="1">Audi</option>
+            <option value="2">BMW</option>
+            <option value="3">Citroen</option>
+            <option value="4">Ford</option>
+            <option value="5">Honda</option>
+            <option value="6">Jaguar</option>
+            <option value="7">Land Rover</option>
+            <option value="8">Mercedes</option>
+            <option value="9">Mini</option>
+            <option value="10">Nissan</option>
+            <option value="11">Toyota</option>
+            <option value="12">Volvo</option>
+          </select>
         </div>
       </div>
     </div>
