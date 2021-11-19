@@ -1,102 +1,94 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
-    <title>title</title>
-	<link rel="stylesheet" href="reset.css" type="text/css">
-	<link rel="stylesheet" href="os9.css" type="text/css">
-  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script>
-	    $(function() {
-	        $( ".os9win" ).draggable({ handle: ".os9win__titlebar", stack: "div", distance: 0 });
-	    });
-    </script>  
+    <meta charset="UTF-8" />
+    <title>Mac OS 9</title>
+
+    <link rel="stylesheet" href="OS9.css" type="text/css" />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@csstools/normalize.css"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="demo/demo.css" type="text/css" />
+    <script src="demo/draggable.js"></script>
   </head>
   <body>
-  	<div class="os9icon">
-  		<img src="appleshare_icon.png">
-  		<span>Appleshare Shortcut</span>
-  	</div>
-
-	<div class="os9win os9win--scrollable">
-	  <div class="os9win__titlebar">
-	    <div class="os9win__icon os9win__icon--close"></div>
-	    <div class="os9win__spacer"></div>
-	    <div class="os9win__icon--face"></div>
-	    About this computer
-	    <div class="os9win__spacer"></div>
-	    <div class="os9win__icon os9win__icon--collapse1"></div>
-	    <div class="os9win__icon os9win__icon--collapse2"></div>
-	  </div>
-	  <div class="os9content-container">
-	    <div class="os9content"><pre>scrollbars only work in chrome/webkit
+    <div class="draggable">
+      <div class="window">
+        <div class="title-bar dragger">
+          <button aria-label="Close"></button>
+          <div class="spacer"></div>
+          <div class="icon--face"></div>
+          About this computer
+          <div class="spacer"></div>
+          <button aria-label="Zoom"></button>
+          <button aria-label="Collapse"></button>
+        </div>
+        <div class="window-body-container">
+          <div class="window-body">
+            <pre>
+Scrollbars only work in Chrome/Webkit
 	    
-	    resize me
+Resize me
 	    
-	ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffgdfg
-	      dsfdg
-	      sdf
-	      gsdf
-	      gsdf
-	      gsdf
-	      gdsf
-	      gsdfg
-	      dsfg
-	      sdfg
-	      dsfg
-	      sfdg
-	      sadfads
-	      fads
-	      fads
-	      fads
-	      fd
-	      f
-	      sadf
-	      </pre>
-	    </div>
-	  </div>
-	</div>
-
-	<div class="os9win os9win--scrollable">
-	  <div class="os9win__titlebar">
-	    <div class="os9win__icon os9win__icon--close"></div>
-	    <div class="os9win__spacer"></div>
-	    <div class="os9win__icon--face"></div>
-	    About this computer
-	    <div class="os9win__spacer"></div>
-	    <div class="os9win__icon os9win__icon--collapse1"></div>
-	    <div class="os9win__icon os9win__icon--collapse2"></div>
-	  </div>
-	  <div class="os9content-container">
-		<div class="os9content-finderheader os9content-finderheader--listview">
-			<div>32 items, 707.3 MB available</div>
-		</div>
-	    <div class="os9content">
-	    	<button class="primary">OK</button>
-	    	<button>Cancel</button>
-	    	<button disabled>Disabled</button>
-	    	<input type="text" name="">
-	    	<input type="checkbox" name="checkbox">
-	    	<label for="checkbox">Pure CSS Checkbox</label>
-			<select class="select-css">
-				<option value="0">Select car:</option>
-				<option value="1">Audi</option>
-				<option value="2">BMW</option>
-				<option value="3">Citroen</option>
-				<option value="4">Ford</option>
-				<option value="5">Honda</option>
-				<option value="6">Jaguar</option>
-				<option value="7">Land Rover</option>
-				<option value="8">Mercedes</option>
-				<option value="9">Mini</option>
-				<option value="10">Nissan</option>
-				<option value="11">Toyota</option>
-				<option value="12">Volvo</option>
-			</select>
-	    </div>
-	  </div>
-	</div>
-
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non scelerisque tellus. Nulla varius laoreet molestie. 
+Vivamus placerat, augue eu cursus congue, magna odio commodo risus, vel pellentesque augue massa a nisl. Suspendisse potenti. 
+Aliquam semper, felis at hendrerit lacinia, dui elit ornare ligula, ac placerat ligula ligula a arcu. 
+Curabitur sed fermentum mi, nec lobortis purus. Phasellus sollicitudin, sem vel feugiat varius, orci libero posuere tellus, 
+eu aliquet ex felis vel libero. Sed accumsan erat sit amet rutrum blandit. Aenean euismod orci libero, id laoreet felis blandit eget. 
+Quisque nibh lectus, rutrum ac ipsum non, porttitor molestie elit. Vestibulum a hendrerit mi, vel iaculis mi.
+Donec vitae bibendum sem. Nullam ipsum arcu, accumsan in leo vitae, dignissim accumsan metus. Proin et risus non justo eleifend euismod. 
+Donec sit amet neque eget magna luctus consequat quis ac nisi. Nulla at metus sed libero mattis efficitur nec ut sapien.
+	      </pre
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="draggable">
+      <div class="window">
+        <div class="title-bar dragger">
+          <button aria-label="Close"></button>
+          <div class="spacer"></div>
+          <div class="icon--face"></div>
+          About this computer
+          <div class="spacer"></div>
+          <button aria-label="Zoom"></button>
+          <button aria-label="Collapse"></button>
+        </div>
+        <div class="window-body-container">
+          <div
+            class="window-body-finderheader window-body-finderheader--listview"
+          >
+            <div>32 items, 707.3 MB available</div>
+          </div>
+          <div class="window-body">
+            <button class="primary">OK</button>
+            <button>Cancel</button>
+            <button disabled>Disabled</button>
+            <input type="text" name="" />
+            <input type="checkbox" name="checkbox" />
+            <label for="checkbox">Pure CSS Checkbox</label>
+            <select>
+              <option value="0">Select car:</option>
+              <option value="1">Audi</option>
+              <option value="2">BMW</option>
+              <option value="3">Citroen</option>
+              <option value="4">Ford</option>
+              <option value="5">Honda</option>
+              <option value="6">Jaguar</option>
+              <option value="7">Land Rover</option>
+              <option value="8">Mercedes</option>
+              <option value="9">Mini</option>
+              <option value="10">Nissan</option>
+              <option value="11">Toyota</option>
+              <option value="12">Volvo</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
