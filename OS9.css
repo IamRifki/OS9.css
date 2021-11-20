@@ -1,16 +1,17 @@
 /* Recreating these old UIs in CSS is annoying because those designers just loved to use inset/outset borders */
 
-/* not the original bitmapped version but it's close enough */
 @font-face {
-  font-family: "Chicago";
-  src: url("fonts/Chicago.eot");
-  src: url("fonts/Chicago.eot?#iefix") format("embedded-opentype"),
-    url("fonts/Chicago.woff2") format("woff2"),
-    url("fonts/Chicago.ttf") format("truetype");
+  font-family: "Charcoal";
+  src: url("fonts/Charcoal.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Geneva";
+  src: url("fonts/Geneva.ttf") format("truetype");
 }
 
 body {
-  font-family: "Chicago", sans-serif;
+  font-family: "Charcoal", sans-serif;
   font-smooth: never;
 }
 
@@ -68,7 +69,7 @@ body {
   height: 100%;
   background-color: #dedede;
   border: 1px solid black;
-  padding: 4px;
+  padding: 12px;
 
   /* define the size of the window here */
   width: 360px;
@@ -264,7 +265,7 @@ pointer-events: none;
 /* https://github.com/npjg/new-dawn */
 
 .window-body button {
-  font-family: "Chicago", sans-serif;
+  font-family: "Charcoal", sans-serif;
   font-size: 12px;
   font-weight: normal;
   height: 22px;
@@ -272,7 +273,7 @@ pointer-events: none;
   background-color: #dedede;
   display: inline-block;
   margin-bottom: 7px;
-  margin-left: 14px;
+  margin-right: 14px;
   border-radius: 3px;
   border: 1px solid #000;
   box-shadow: inset -1px -1px 0px 0px #777, inset -2px -2px 0px 0px #aaa,
@@ -329,7 +330,7 @@ input[type="checkbox"] {
 }
 
 select {
-  font-family: "Chicago", sans-serif;
+  font-family: "Charcoal", sans-serif;
   font-size: 12px;
   font-weight: normal;
   height: 22px;
@@ -337,13 +338,13 @@ select {
   background-color: #dedede;
   display: inline-block;
   margin-bottom: 7px;
-  margin-left: 14px;
+  margin-right: 14px;
   border-radius: 3px;
   border: 1px solid #000;
   box-shadow: inset -1px -1px 0px 0px #777, inset -2px -2px 0px 0px #aaa,
     inset 1px 1px 0px 0px #ddd, inset 2px 2px 0px 0px #fff;
   outline: none;
-  display: block;
+  display: inlblock;
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
@@ -368,5 +369,7 @@ select option {
 }
 
 pre {
-  font-family: "Chicago", sans-serif;
+  font-family: "Geneva", sans-serif;
+  font-size: 12px;
+  font-smooth: never;
 }
